@@ -1,0 +1,29 @@
+<div>
+    <h1>Calculadora de IMC</h1>
+    
+    <div class="box1">
+      <label for="peso">Peso: </label>
+      <input type="number" id="peso" [(ngModel)]="peso" (keyup)="calcularIMC()">
+    </div>
+    <div class="box2">
+      <label for="altura">Altura: </label>
+      <input type="number" id="altura" [(ngModel)]="altura" (keyup)="calcularIMC()">
+    </div>
+    <br>
+    <br>
+    <div class="result" *ngIf="imc || classificacao">
+        <p>Seu IMC é {{ imc }}</p>
+        <p>Sua classificação é: {{ classificacao }}</p>
+        <div *ngIf="classificacao == 'Normal'" class="alert alert-success" role="alert"><!--class do bootstrap para sinais de sucesso-->
+          Parabéns, você está saudável!
+        </div>
+        <div *ngIf="classificacao == 'Sobrepeso'" class="alert alert-warning" role="alert"><!--class do bootstrap para sinais de atenção-->
+          Cuidado, você está acima do peso!
+        </div>
+        <div *ngIf="classificacao != 'Normal' && classificacao != 'Sobrepeso'" class="alert alert-danger" role="alert"> <!--class do bootstrap para sinais de perigo-->
+          Cuidado, sua saúde está em risco!
+        </div>
+      </div>
+  </div>
+  
+  

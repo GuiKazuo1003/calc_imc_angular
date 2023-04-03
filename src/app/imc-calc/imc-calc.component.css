@@ -1,0 +1,59 @@
+/* Estilos para a página inteira */
+*{
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos para o cabeçalho */
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  /* Estilos para os campos de entrada */
+  .box1,
+  .box2 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    margin: 0 auto; /* centralizar horizontalmente */
+    max-width: 300px; /* limitar a largura máxima */
+  }
+  
+  .box1 label,
+  .box2 label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .box1 input,
+  .box2 input {
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+  }
+  
+  /* Estilos para o resultado */
+  .result {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .result p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    margin: 0 auto; /* centralizar horizontalmente */
+    max-width: 300px; /* limitar a largura máxima */
+  }
+  .alert-success{
+    color: green;
+  }
+  .alert-warning{
+    color: yellow;
+    text-shadow: 1px 1px rgba(0,0,0,0.3);
+  }
+  .alert-danger{
+    color: red;
+  }
