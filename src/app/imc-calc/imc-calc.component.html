@@ -2,12 +2,12 @@
     <h1>Calculadora de IMC</h1>
     
     <div class="box1">
-      <label for="peso">Peso: </label>
+      <label for="peso">Peso em Kg: </label>
       <input type="number" id="peso" [(ngModel)]="peso" (keyup)="calcularIMC()">
     </div>
     <div class="box2">
-      <label for="altura">Altura: </label>
-      <input type="number" id="altura" [(ngModel)]="altura" (keyup)="calcularIMC()">
+      <label for="altura">Altura em Metros: </label>
+      <input class="alt" type="number" id="altura" [(ngModel)]="altura" (keyup)="calcularIMC()">
     </div>
     <br>
     <br>
